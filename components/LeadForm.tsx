@@ -72,9 +72,13 @@ export function LeadForm({
       );
       form.reset();
       onSuccess?.();
-    } catch {
+    } catch (err) {
       setStatus("error");
-      setMessage("Something went wrong. Please call us or use WhatsApp.");
+      setMessage(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please call us or use WhatsApp."
+      );
     }
   }
 
@@ -131,7 +135,8 @@ export function LeadForm({
             inputMode="tel"
             autoComplete="tel"
             placeholder="Mobile number"
-            pattern="^[0-9()+\\s-]{10,15}$"
+            pattern="[0-9]{10,15}"
+            title="Enter 10 to 15 digits"
             className="w-full rounded-xl border border-white/10 bg-ink-950/80 px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:border-gold-500/50 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
           />
         </div>
