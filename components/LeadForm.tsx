@@ -131,7 +131,7 @@ export function LeadForm({
             inputMode="tel"
             autoComplete="tel"
             placeholder="Mobile number"
-            pattern="[0-9+\s-]{10,15}"
+            pattern="^[0-9()+\\s-]{10,15}$"
             className="w-full rounded-xl border border-white/10 bg-ink-950/80 px-4 py-3 text-sm text-white placeholder:text-zinc-500 focus:border-gold-500/50 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
           />
         </div>
