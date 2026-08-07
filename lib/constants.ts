@@ -7,13 +7,13 @@ export const BRAND = {
   tagline: "Premium Smart Apartments Near KIADB Aerospace Park",
   locationLine:
     "Near KIADB Aerospace Park, Thanisandra Extension, North Bangalore",
-  phoneDisplay: "+91 98765 43210",
-  phoneTel: "+919876543210",
+  phoneDisplay: "+91 70390 11696",
+  phoneTel: "+917039011696",
   /** WhatsApp: digits only, country code, no + */
-  whatsappDigits: "919876543210",
-  email: "leads@propninja.in",
+  whatsappDigits: "917039011696",
+  email: "contact@propninja.com",
   address:
-    "PropNinja Consulting Pvt Ltd, Bengaluru, Karnataka, India — update full registered address before campaigns.",
+    "1685 6th main 7th cross hampinagar viajaynagar Bengaluru, Karnataka, India",
   reraPlaceholder:
     "RERA registration details to be updated upon confirmation from the developer / allottee documentation.",
 };
